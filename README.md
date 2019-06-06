@@ -1,7 +1,6 @@
-# meetup talk **modules in JS and NodeJS**
+# modules in JS and NodeJS
 
-## slides
-In the root of this project: modules_in_js_and_nodejs.pdf
+* slides from the meetup talk are in the root of the project
 
 ## examples
 * 01_namespace_pollution: shows how modules have been used in the early days, pushing everything onto the global namespace
