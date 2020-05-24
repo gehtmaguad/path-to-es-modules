@@ -1,23 +1,16 @@
 var BATTLE = {};
 
 (function () {
-    function battle(candidate1, candidate2) {
-        return candidate1.length > candidate2.length ?
-            candidate1 : candidate2;
-    }
+  var fighters = ["Johnny", "Beatrice", "Nadine", "Christopher"];
 
-    function armWrestling(candidate1, candidate2) {
-        return candidate1.length < candidate2.length ?
-            candidate1 : candidate2;
-    }
+  function pickWinner() {
+    return fighters[Math.floor(Math.random() * Math.floor(fighters.length))];
+  }
 
-    var fighters = ["Johnny", "Beatrice", "Eugene", "Christopher"];
+  function getFighters() {
+    return fighters;
+  }
 
-    function getFighters() {
-        return fighters;
-    }
-
-    BATTLE.battle = battle;
-    BATTLE.armWrestling = armWrestling;
-    BATTLE.getFighters = getFighters;
+  BATTLE.pickWinner = pickWinner;
+  BATTLE.getFighters = getFighters;
 })();

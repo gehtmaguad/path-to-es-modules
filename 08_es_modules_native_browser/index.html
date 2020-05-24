@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <script type="module">
+      import { winner, myfighters } from "./main.js";
+
+      window.addEventListener(
+        "DOMContentLoaded",
+        function () {
+          var fightersH1Tag = document.createElement("H1");
+          fightersH1Tag.innerHTML = "Fighers are: " + myfighters.join(", ");
+          document.body.appendChild(fightersH1Tag);
+
+          var winnerH1Tag = document.createElement("H1");
+          winnerH1Tag.innerHTML = "Winner is: " + winner;
+          document.body.appendChild(winnerH1Tag);
+        },
+        false
+      );
+    </script>
+  </head>
+  <body></body>
+</html>

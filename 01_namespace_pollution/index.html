@@ -1,12 +1,22 @@
 <html>
-
-<body>
-    <h1>Battlement</h1>
+  <head>
     <script src="./battle.js"></script>
     <script src="./main.js"></script>
     <script>
-        console.log(winner);
-    </script>
-</body>
+      window.addEventListener(
+        "DOMContentLoaded",
+        function () {
+          var fightersH1Tag = document.createElement("H1");
+          fightersH1Tag.innerHTML = "Fighers are: " + fighters.join(", ");
+          document.body.appendChild(fightersH1Tag);
 
+          var winnerH1Tag = document.createElement("H1");
+          winnerH1Tag.innerHTML = "Winner is: " + winner;
+          document.body.appendChild(winnerH1Tag);
+        },
+        false
+      );
+    </script>
+  </head>
+  <body></body>
 </html>

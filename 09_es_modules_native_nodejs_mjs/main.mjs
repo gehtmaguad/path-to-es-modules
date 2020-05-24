@@ -1,14 +1,7 @@
-import {
-    battle,
-    armWrestling,
-    getFighters
-} from "./battle.mjs";
+import { getFighters, pickWinner } from "./battle.mjs";
 
-var myfighters = getFighters();
-var winnerBattle1 = battle(myfighters[0], myfighters[1]);
-var winnerBattle2 = battle(myfighters[2], myfighters[3]);
-var winner = armWrestling(winnerBattle1, winnerBattle2);
+const myfighters = getFighters();
+const winner = pickWinner();
 
-console.log("winner: ", winner);
-
-// execute with 'nodejs --experimental-modules main.mjs'
+console.log("fighters are: ", myfighters);
+console.log("winner is: ", winner);

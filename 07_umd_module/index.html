@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <script data-main="main.js" src="require.js"></script>
+    <script>
+      window.addEventListener(
+        "DOMContentLoaded",
+        function () {
+          require(["main"], function (main) {
+            var fightersH1Tag = document.createElement("H1");
+            fightersH1Tag.innerHTML =
+              "Fighers are: " + main.myfighters.join(", ");
+            document.body.appendChild(fightersH1Tag);
+
+            var winnerH1Tag = document.createElement("H1");
+            winnerH1Tag.innerHTML = "Winner is: " + main.winner;
+            document.body.appendChild(winnerH1Tag);
+          });
+        },
+        false
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
